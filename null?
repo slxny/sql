@@ -1,0 +1,7 @@
+SELECT birthdate, name 
+FROM people 
+WHERE birthdate IS NOT null 
+ORDER BY name, birthdate;
+
+-Now let's say we want to exlucde null values for the name column as well?
+-Mayhaps we should first check if there are any? Count(*) for null
