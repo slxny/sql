@@ -1,0 +1,5 @@
+SELECT release_year, count(*) 
+FROM films 
+WHERE release_year IS NOT NULL 
+GROUP BY release_year 
+ORDER BY release_year DESC;
