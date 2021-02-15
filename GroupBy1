@@ -1,0 +1,1 @@
+--Remember that GROUP BY is used with aggregate functions like COUNT() or MAX(). Note that GROUP BY always goes after the FROM clause!
