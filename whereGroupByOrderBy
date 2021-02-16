@@ -1,0 +1,18 @@
+--find the film_id that has the lowest score (before joining)
+
+SELECT * FROM reviews WHERE imdb_score ='1.6';
+
+--result set = film_id: 3750, id 382
+
+--find the film title that has that film_id
+
+SELECT title FROM films WHERE id = '382';
+
+--result set = Friday the 13th: The Final Chapter
+
+--GROUP BY for grouping 
+--ORDER BY for sorting
+
+SELECT release_year, country, max(budget) FROM films 
+GROUP BY release_year, country
+ORDER BY release_year, country;
