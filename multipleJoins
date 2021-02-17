@@ -1,0 +1,6 @@
+SELECT * 
+FROM left_table as lt
+  INNER JOIN right_table AS rt
+    ON lt.id = rt.id
+  INNER JOIN another_table
+    ON lt.id = rt.id
