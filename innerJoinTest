@@ -1,0 +1,9 @@
+SELECT p1.country, p1.continent, prime_minister, president
+-- FROM which table (prime_ministers) AS alias name p1
+FROM prime_ministers AS p1
+-- Join only matching keys (in this case, country) AS alias name p2
+INNER JOIN presidents AS p2
+-- ON the condition where left table column 'country' and right table
+-- column 'country' exist in both tables. This will output a 
+-- record set that includes values in those rows that match the condition
+ON p1.country = p2.country;
