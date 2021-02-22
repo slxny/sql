@@ -1,0 +1,5 @@
+-- Join left_table and right_table on column that they share (country)
+SELECT *
+FROM left_table
+INNER JOIN right_table
+ON left_table.country = right_table.country;
