@@ -1,0 +1,14 @@
+-- 4. Select fields
+SELECT c.code, c.name, c.region, p.year, p.fertility_rate
+  -- 1. From countries (alias as c)
+  FROM countries AS c
+  -- 2. Join with populations (as p)
+  INNER JOIN populations AS p
+    -- 3. Match on country code
+    ON c.code = p.country_code
+
+/*
+Inner join countries (left) and populations (right) on the code and country_code fields respectively.
+Alias countries AS c and populations AS p.
+Select code, name, and region from countries and also select year and fertility_rate from populations (5 fields in total).
+*/
