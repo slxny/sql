@@ -1,0 +1,1 @@
+SELECT COUNT(DISTINCT borough) FROM `bigquery-public-data.london_crime.crime_by_lsoa`
