@@ -1,0 +1,20 @@
+/*  SELECT DISTINCT major_category FROM `bigquery-public-data.london_crime.crime_by_lsoa`
+
+shows the actual major_category results (there are 9 distinct rows) 
+
+SELECT COUNT(DISTINCT major_category) FROM `bigquery-public-data.london_crime.crime_by_lsoa`
+
+shows the amount of major_category rows (there are 9..) */
+
+
+SELECT
+  major_category,
+  COUNT(*) AS totalcount
+FROM
+  `bigquery-public-data.london_crime.crime_by_lsoa`
+GROUP BY
+  major_category
+ORDER BY totalcount DESC
+
+/* select column, count(*) on that column, group by the column, order from desceding values down */
+
