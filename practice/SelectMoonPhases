@@ -1,0 +1,6 @@
+SELECT
+  phase_emoji,
+  COUNT(*) AS num
+FROM
+  `bigquery-public-data.moon_phases.moon_phases`
+GROUP BY phase_emoji;
