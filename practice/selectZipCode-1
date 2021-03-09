@@ -1,0 +1,5 @@
+SELECT county_geoid, 
+COUNT (*) AS num
+FROM `bigquery-public-data.hud_zipcode_crosswalk.zip_to_county` 
+GROUP BY county_geoid
+ORDER BY num DESC
